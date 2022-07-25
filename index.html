@@ -11,11 +11,12 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles/style.css">
   <title>Onboarding</title>
+
   <script>
     $(document).ready(function () {
       function navigation(position){
-        $('.j_page').removeClass('active').addClass('oculto');
-        $('.j_page'+position).removeClass('oculto').addClass('active');
+        $('.j_page').removeClass('active').addClass('hidden');
+        $('.j_page'+position).removeClass('hidden').addClass('active');
       }
       $('.j_bullet').click(function () {
         var value = $(this).attr('data-bullet');
@@ -58,7 +59,7 @@
   </main>
 
   <!-- PAGINA 2 -->
-  <main class="content-wrapper j_page j_page2 oculto slide-left">
+  <main class="content-wrapper j_page j_page2 hidden slide-left">
     <section id="info">
       <div class="container-img">
         <img src="assets/img-2.png" alt="">
@@ -78,7 +79,7 @@
   </main>
 
   <!-- PAGINA 3 -->
-  <main class="content-wrapper j_page j_page3 oculto slide-left">
+  <main class="content-wrapper j_page j_page3 hidden slide-left">
     <section id="info">
       <div class="container-img">
         <img src="assets/img-3.png" alt="">
