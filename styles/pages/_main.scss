@@ -1,0 +1,118 @@
+@import '../abstract/variaveis';
+
+// @keyframes slide-right-left {
+//   from {
+//     transform: translateX(300px);
+//     opacity: 0;
+//   } to {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
+// @keyframes slide-left-right {
+//   from {
+//     transform: translateX(-300px);
+//     opacity: 0;
+//   } to {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
+// .slide-left{
+//   animation: slide-right-left 800ms;
+// }
+// .slide-right{
+//   animation: slide-left-right 400ms;
+// }
+
+
+.oculto{
+  display: none;
+}
+.active{
+  display: block;
+}
+
+main{
+  height: 100vh;
+  #info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+    .container-img{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+    h1{
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+      margin: 10px 0 25px 0;
+      color: $textColorDark;
+    }
+    p{
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      color: $textColorDark;
+    }
+  }
+  #navigation{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 64px;
+    .pagination{
+      display: flex;
+      margin-bottom: 64px;
+      .bullet{
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        margin: 0 8px;
+        border: 1px solid $textColorDark;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .bullet-selected{
+        width: 12px;
+        height: 12px;
+        background-color: $primaryColor;
+        margin: 0 8px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+    .main-button{
+      width: 100%;
+      background-color: $primaryColor;
+      padding: 12px 0;
+      text-align: center;
+      box-shadow: 0px 4px 10px #A1C3FC;
+      text-decoration: none;
+      color: $textColorLight;
+      font-weight: 500;
+      font-size: 18px;
+      transition: filter ease-in-out 0.2s;
+    }
+    .main-button:hover{
+      filter: brightness(0.9);
+    }
+    .skip{
+      margin: 40px 0;
+      color: $primaryColor;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      transition: filter ease-in-out 0.2s;
+    }
+    .skip:hover{
+      filter: brightness(0.9);
+    }
+  }
+}

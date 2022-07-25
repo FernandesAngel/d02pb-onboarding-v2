@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content-wrapper {
+  max-width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 426px) {
+  .content-wrapper {
+    max-width: 425px;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .content-wrapper {
+    max-width: 91%;
+  }
+}
+
+.oculto {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+main {
+  height: 100vh;
+}
+
+main #info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 35px;
+}
+
+main #info .container-img {
+  width: 100%;
+}
+
+main #info .container-img img {
+  width: 100%;
+}
+
+main #info h1 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0 25px 0;
+  color: #000000;
+}
+
+main #info p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #000000;
+}
+
+main #navigation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 64px;
+}
+
+main #navigation .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 64px;
+}
+
+main #navigation .pagination .bullet {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  margin: 0 8px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main #navigation .pagination .bullet-selected {
+  width: 12px;
+  height: 12px;
+  background-color: #92E3A9;
+  margin: 0 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main #navigation .main-button {
+  width: 100%;
+  background-color: #92E3A9;
+  padding: 12px 0;
+  text-align: center;
+  -webkit-box-shadow: 0px 4px 10px #A1C3FC;
+          box-shadow: 0px 4px 10px #A1C3FC;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
+  -webkit-transition: -webkit-filter ease-in-out 0.2s;
+  transition: -webkit-filter ease-in-out 0.2s;
+  transition: filter ease-in-out 0.2s;
+  transition: filter ease-in-out 0.2s, -webkit-filter ease-in-out 0.2s;
+}
+
+main #navigation .main-button:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+main #navigation .skip {
+  margin: 40px 0;
+  color: #92E3A9;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  -webkit-transition: -webkit-filter ease-in-out 0.2s;
+  transition: -webkit-filter ease-in-out 0.2s;
+  transition: filter ease-in-out 0.2s;
+  transition: filter ease-in-out 0.2s, -webkit-filter ease-in-out 0.2s;
+}
+
+main #navigation .skip:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+/*# sourceMappingURL=style.css.map */

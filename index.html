@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Onboarding</title>
+  <script>
+    $(document).ready(function () {
+      function navigation(position){
+        $('.j_page').removeClass('active').addClass('oculto');
+        $('.j_page'+position).removeClass('oculto').addClass('active');
+      }
+      $('.j_bullet').click(function () {
+        var value = $(this).attr('data-bullet');
+        navigation(value);
+        return false;
+      })
+      $('.j_button').click(function () {
+        var value = $(this).attr('data-button');
+        navigation(value);
+        return false;
+      })
+      $('.j_skip').click(function () {
+        var value = $(this).attr('data-skip');
+        navigation(value);
+        return false;
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <!-- PAGINA 1 -->
+  <main class="content-wrapper j_page j_page1 active slide-left">
+    <section id="info">
+      <div class="container-img">
+        <img src="assets/img-1.png" alt="">
+      </div>
+      <h1>Plant lover Community</h1>
+      <p>Find gardening enthusiasts from all over the world</p>
+    </section>
+    <section id="navigation">
+      <div class="pagination">
+        <a href="index.html" class="bullet-selected j_bullet" data-bullet="1"></a>
+        <a href="middlePage.html" class="bullet j_bullet" data-bullet="2"></a>
+        <a href="lastPage.html" class="bullet j_bullet" data-bullet="3"></a>
+      </div>
+      <a href="middlePage.html" class="main-button j_button" data-button='2'>Continue</a>
+      <a href="lastPage.html" class="skip j_skip" data-skip='3'>Skip</a>
+    </section>
+  </main>
+
+  <!-- PAGINA 2 -->
+  <main class="content-wrapper j_page j_page2 oculto slide-left">
+    <section id="info">
+      <div class="container-img">
+        <img src="assets/img-2.png" alt="">
+      </div>
+      <h1>Get fast & safe delivery</h1>
+      <p>Get good quality products for your plants</p>
+    </section>
+    <section id="navigation">
+      <div class="pagination">
+        <a href="index.html" class="bullet j_bullet" data-bullet="1"></a>
+        <a href="middlePage.html" class="bullet-selected j_bullet" data-bullet="2"></a>
+        <a href="lastPage.html" class="bullet j_bullet" data-bullet="3"></a>
+      </div>
+      <a href="middlePage.html" class="main-button j_button" data-button='3'>Continue</a>
+      <a href="lastPage.html" class="skip j_skip" data-skip='3'>Skip</a>
+    </section>
+  </main>
+
+  <!-- PAGINA 3 -->
+  <main class="content-wrapper j_page j_page3 oculto slide-left">
+    <section id="info">
+      <div class="container-img">
+        <img src="assets/img-3.png" alt="">
+      </div>
+      <h1>Buy & Sell Tools</h1>
+      <p>Buy & sell good quality products for your beautiful plants</p>
+    </section>
+    <section id="navigation">
+      <div class="pagination">
+        <a href="index.html" class="bullet j_bullet" data-bullet="1"></a>
+        <a href="middlePage.html" class="bullet j_bullet" data-bullet="2"></a>
+        <a href="lastPage.html" class="bullet-selected j_bullet" data-bullet="3"></a>
+      </div>
+      <a href="middlePage.html" class="main-button j_button" data-button='1'>Get Started</a>
+    </section>
+  </main>
+</body>
+
+</html>
